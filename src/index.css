@@ -1,0 +1,150 @@
+html {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+* {
+  margin: 0;
+}
+#root {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: #282726;
+  padding: 0 !important;
+  gap: 36px
+}
+
+.gm-title {
+  color: #F9F4DA;
+
+}
+
+.gm-description {
+  color: #8E8E8E;
+
+}
+
+.gm-description,
+.gm-title .turn-phrase {
+  font-family: "Hanken Grotesk";
+  /* font-size: 16px; */
+  font-weight: 500;
+  width: 352px;
+  text-align: center;
+}
+
+.turn-phrase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 352px;
+  height: 59px;
+  padding: 6px 0px 6px 0px;
+  border: dashed 2px #282726;
+  background-color: #7A5EA7;
+  font-family: "Hanken Grotesk";
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 20.85px;
+  color: #F9F4DA;
+}
+
+.language-container {
+  display: flex;
+  justify-content: center;
+  width: 253px;
+  flex-wrap: wrap;
+  gap: 1.5px
+}
+
+.language-box {
+  position: relative;
+  width: min-content;
+  margin: 0;
+  padding: 3px;
+  text-align: center;
+  border-radius: 4.5px;
+  font-family: "Hanken Grotesk";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15.64px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.eliminate-language::after  {
+  background-color: #353434a2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: '💀';
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.word-box {
+  display: flex;
+  gap: 6px;
+}
+
+.char {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Hanken Grotesk";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.45px;
+  text-align: center;
+  color: #F9F4DA;
+  border-bottom: 1px solid #F9F4DA;
+  width: 40px;
+  aspect-ratio: 1/1;
+  background-color: #323232;
+}
+
+.clavie {
+  display: flex;
+  justify-content: center;
+  width: 480px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.char-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  gap: 6px;
+  border-radius: 4px;
+  border: 1px solid white;
+  font-family: "Hanken Grotesk";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  background-color: #FCBA29;
+  cursor: pointer;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
